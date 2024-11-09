@@ -1,6 +1,6 @@
-FROM quay.io/fedora-ostree-desktops/silverblue:40
+FROM quay.io/fedora-ostree-desktops/silverblue:41
 
-ENV VERSION=40
+ENV VERSION=41
 
 LABEL summary="Customized Fedora Silverblue containerized ostree image" \
       maintainer="Hanspeter Gosteli <hanspeter.gosteli@gmail.com>"
@@ -15,3 +15,4 @@ RUN rpm -Uhv https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-
     rpm-ostree install -y $(< extra-packages) && \
     rm /extra-packages && \
     ostree container commit
+
