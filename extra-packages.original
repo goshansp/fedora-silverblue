@@ -1,0 +1,35 @@
+# custom rpms added by goshansp
+  # todo: check if all those are needed
+  - coreos-installer      # create qemu vm
+  - dbus-x11              # needed for flatpak https://github.com/flatpak/flatpak/issues/3847
+  - distribution-gpg-keys # required for ostree compose for rpmfusion-nonfree-steam
+  - fio
+  - gcc                   # libvirt-python
+  - genisoimage           # create usb installer
+  - git
+  - gnome-screenshot      # no flatpak as of 07.2022
+  - guestfs-tools         # molecule
+  - hdparm
+  - ipa-client
+  - isomd5sum             # create usb installer
+  - jq
+  - libvirt               # molecule
+  - libvirt-client        # molecule
+  - libvirt-devel         # molecule
+  - libvirt-nss           # virtualization
+  - lm_sensors
+  - nmap
+  - oddjob-mkhomedir      # ldap
+  - openssl               # ssl.yml
+  - python3
+  - python3-pip
+  - python3-devel         # molecule
+  - python3-psutil        # dconf
+  - qemu-kvm-core
+  - smartmontools
+  - sssd-tools            # sssd_override / ldap.yml
+  - steam-devices
+  - tmux
+  - vim
+  - virt-install          # kvm
+  - virt-manager          # no flatpak as of 07.2022
