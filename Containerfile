@@ -1,4 +1,4 @@
-FROM quay.io/fedora-ostree-desktops/silverblue:40
+FROM quay.io/fedora-ostree-desktops/silverblue:41
 
 ENV VERSION=41
 
