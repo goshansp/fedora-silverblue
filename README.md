@@ -6,7 +6,7 @@ This project based on https://github.com/tosmi/fedora-silverblue/tree/40-stderr 
 - Find nicer way to keep extra-packages metadata
 
 # Resulting Image
-https://quay.io/repository/rh_ee_hgosteli/fedora-silverblue
+https://quay.io/repository/goshansp/fedora-silverblue
 
 # Local Build
 ```
