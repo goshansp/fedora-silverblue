@@ -20,6 +20,7 @@ libvirt-devel
 libvirt-nss
 lm_sensors
 netcat
+net-tools
 nmap
 oddjob-mkhomedir
 openssl
