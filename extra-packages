@@ -1,6 +1,7 @@
 arm-image-installer
 bridge-utils
 coreos-installer
+cargo
 dbus-x11
 distribution-gpg-keys
 fio
@@ -31,6 +32,7 @@ python3-devel
 python3-psutil
 qemu-kvm-core
 rclone
+rust
 smartmontools
 sssd-tools
 steam-devices
