@@ -4,7 +4,7 @@ Description=Bootstrap using Ansible
 
 [Service]
 Type=oneshot
-ExecStart="ansible-pull -U https://gitlab.com/goshansp/infrastructure.git -i localhost, bootstrap.yml"
+ExecStart=/usr/bin/ansible-pull -U https://gitlab.com/goshansp/infrastructure.git -i localhost, bootstrap.yml
 
 [Install]
 WantedBy=multi-user.target

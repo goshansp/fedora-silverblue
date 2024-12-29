@@ -1,4 +1,5 @@
 ansible-core
+ansible-collection-ansible-posix
 arm-image-installer
 bridge-utils
 coreos-installer

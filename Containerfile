@@ -17,4 +17,7 @@ RUN rpm -Uhv https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-
 
 # TODO: Add timer for regular updates
 # https://docs.fedoraproject.org/en-US/bootc/building-containers/
+# TODO:
+# FIX: ERROR! couldn't resolve module/action 'ansible.posix.authorized_key'. This often indicates a misspelling, missing collection, or incorrect module path.
+
 COPY ansible-pull.service /etc/systemd/system/ansible-pull.service
