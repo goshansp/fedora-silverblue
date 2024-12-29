@@ -15,3 +15,6 @@ RUN rpm -Uhv https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-
     rm /extra-packages && \
     ostree container commit
 
+# TODO: Add timer for regular updates
+# https://docs.fedoraproject.org/en-US/bootc/building-containers/
+COPY ansible-pull.service /etc/systemd/system/ansible-pull.service
