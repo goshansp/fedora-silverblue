@@ -1,4 +1,5 @@
 # /etc/systemd/system/ansible-pull.service
+# nfc change from ostree
 [Unit]
 Description=Bootstrap using Ansible
 
