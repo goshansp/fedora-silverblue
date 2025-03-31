@@ -1,5 +1,5 @@
 FROM quay.io/fedora-ostree-desktops/silverblue:41
-ENV VERSION=goshansp-41
+ENV VERSION=41
 # NFC
 LABEL summary="Customized Fedora Silverblue containerized ostree image" \
       maintainer="Hanspeter Gosteli <hanspeter.gosteli@gmail.com>"
