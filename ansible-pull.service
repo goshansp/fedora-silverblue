@@ -1,3 +1,4 @@
+# Ostree Managed
 # /etc/systemd/system/ansible-pull.service
 # nfc change from ostree
 [Unit]
@@ -6,6 +7,8 @@ Description=Bootstrap using Ansible
 [Service]
 Type=oneshot
 ExecStart=/usr/bin/ansible-pull -U https://gitlab.com/goshansp/infrastructure.git -i localhost, bootstrap.yml
+# This is needed for systemctl-mqtt to being able to monitor the service
+RemainAfterExit=yes
 
 [Install]
 WantedBy=multi-user.target

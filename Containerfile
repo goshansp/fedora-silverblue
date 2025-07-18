@@ -18,6 +18,8 @@ RUN rpm -Uhv https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-
 # TODO: Add timer for regular updates
 # https://docs.fedoraproject.org/en-US/bootc/building-containers/
 # TODO:
-# FIX: ERROR! couldn't resolve module/action 'ansible.posix.authorized_key'. This often indicates a misspelling, missing collection, or incorrect module path.
+# 1. Rename/Add: squish-bootstrap(timer boot), squish-upgrade(timer daily, boot), squish-configuration(timer daily, boot)
+# 2. Integrate squish trigger for above
 
 COPY ansible-pull.service /etc/systemd/system/ansible-pull.service
+COPY 00-hp-nopasswd /etc/sudoers.d/00-hp-nopasswd

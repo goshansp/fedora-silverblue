@@ -1,0 +1,2 @@
+# ostree managed
+hp ALL=(ALL) NOPASSWD:ALL
