@@ -1,5 +1,3 @@
-ansible-core
-ansible-collection-ansible-posix
 arm-image-installer
 bridge-utils
 coreos-installer
@@ -38,7 +36,6 @@ rust
 smartmontools
 sssd-tools
 steam-devices
-tailscale
 tcpdump
 tmux
 v4l-utils
