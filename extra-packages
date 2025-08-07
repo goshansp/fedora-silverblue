@@ -36,6 +36,7 @@ rust
 smartmontools
 sssd-tools
 steam-devices
+tailscale
 tcpdump
 tmux
 v4l-utils
