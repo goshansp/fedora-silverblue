@@ -1,4 +1,4 @@
-FROM quay.io/fedora/fedora-bootc:43
+FROM quay.io/fedora/fedora-silverblue:43
 ENV VERSION=43
 LABEL summary="Customized Fedora Silverblue Containerized Bootc Image" \
       maintainer="Hanspeter Gosteli <hanspeter.gosteli@gmail.com>"
