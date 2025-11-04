@@ -8,7 +8,6 @@ fio
 gcc
 genisoimage
 git
-gnome-screenshot
 gstreamer1-plugins-base-tools
 guestfs-tools
 hdparm
