@@ -1,4 +1,4 @@
-ARG VERSION=44
+ARG VERSION=43
 FROM quay.io/fedora/fedora-silverblue:${VERSION}
 
 ENV VERSION=${VERSION}
