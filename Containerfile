@@ -1,4 +1,4 @@
-ARG VERSION=43
+ARG VERSION=44
 FROM quay.io/fedora/fedora-silverblue:${VERSION}
 ARG VERSION
 ENV VERSION=${VERSION}
@@ -10,8 +10,8 @@ COPY extra-packages /
 RUN dnf install -y \
       https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-${VERSION}.noarch.rpm \
       https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-${VERSION}.noarch.rpm && \
-    (cd /etc/yum.repos.d; curl -LO https://pkgs.tailscale.com/stable/fedora/tailscale.repo) && \
-    dnf install -y $(< extra-packages) && \
+    curl -Lo /etc/yum.repos.d/tailscale.repo https://pkgs.tailscale.com/stable/fedora/tailscale.repo && \
+    dnf install -y --setopt=install_weak_deps=False $(< extra-packages) && \
     dnf clean all && \
     rm -f /extra-packages
 
