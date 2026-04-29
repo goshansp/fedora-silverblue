@@ -1,6 +1,6 @@
 ARG VERSION=43
 FROM quay.io/fedora/fedora-silverblue:${VERSION}
-
+ARG VERSION
 ENV VERSION=${VERSION}
 LABEL summary="Customized Fedora Silverblue Containerized Bootc Image" \
       maintainer="Hanspeter Gosteli <hanspeter.gosteli@gmail.com>"
@@ -8,8 +8,8 @@ LABEL summary="Customized Fedora Silverblue Containerized Bootc Image" \
 COPY extra-packages /
 
 RUN dnf install -y \
-      https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-${VERSION}.noarch.rpm \
-      https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-${VERSION}.noarch.rpm && \
+      https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-${VERSION}.noarch.rpm \
+      https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-${VERSION}.noarch.rpm && \
     (cd /etc/yum.repos.d; curl -LO https://pkgs.tailscale.com/stable/fedora/tailscale.repo) && \
     dnf install -y $(< extra-packages) && \
     dnf clean all && \
